@@ -166,6 +166,7 @@ public class WordReplacerTest {
         Assert.assertEquals(result, replaced);
     }
 
+
     private List<String> generateFakeListString(int lines) {
         Assert.assertTrue(lines < 1001);
         return Stream.generate(() -> FilteredOutputStreamTest.FAKE_TEXT).limit(lines).collect(Collectors.toList());
